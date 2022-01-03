@@ -48,3 +48,11 @@ services:
 ### Persistence
 
 The image has a volume mounted at `/opt/data`. To maintain states between restarts, mount a volume at this location.
+
+### Ayushka
+
+#### Build For Apple Silicon
+
+```shell
+ docker build --platform linux/arm64 -t pubsub:latest ./
+```
